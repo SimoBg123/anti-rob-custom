@@ -1,17 +1,18 @@
 local QBCore = exports['qb-core']:GetCoreObject()
+print ("Anti-Rob By Simeoncho <3")
+
 
 RegisterCommand("rob", function(source, args)
     local playerId = PlayerId()
     local playerPed = GetPlayerPed(playerId)
     local playerCoords = GetEntityCoords(playerPed)
 
-    -- Вашият код за проверка на Steam лиценз тук
-    -- Можете да използвате функцията, предоставена от вашата рамка, за да получите Steam лиценз на играча.
-    -- Например, ако използвате QBCore, може да използвате следната логика:
-
+    ----- Steam allowed license dont working!
+    ----- Steam allowed license dont working!
+       
     local playerLicense = QBCore.Functions.GetPlayerData().metadata["license"]
     local allowedLicenses = {
-        "steam:109109948"
+        "steam:dontworking"
     }
 
     local isAllowed = false
@@ -23,8 +24,7 @@ RegisterCommand("rob", function(source, args)
     end
 
     if isAllowed then
-        -- Добавете тук вашия код, който да се изпълни, ако играчът има разрешение да използва командата
     else
-        TriggerEvent("chatMessage", "^1Грешка: ^7Нямате разрешение да използвате тази команда.")
+        TriggerEvent("chatMessage", "^1ERROR: ^7You dont have permissions to use this command!.")
     end
 end, false)
