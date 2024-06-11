@@ -6,9 +6,6 @@ RegisterCommand("rob", function(source, args)
     local playerId = PlayerId()
     local playerPed = GetPlayerPed(playerId)
     local playerCoords = GetEntityCoords(playerPed)
-
-    ----- Steam allowed license dont working!
-    ----- Steam allowed license dont working!
        
     local playerLicense = QBCore.Functions.GetPlayerData().metadata["license"]
     local allowedLicenses = {
