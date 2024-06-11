@@ -1,8 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Simeoncho#7008'
-description 'Anti-Rob Command by Simeoncho FOR QBCore'
+author 'Simeoncho'
+description 'Anti-Rob by Simeoncho (а)'
 version '1.0.0'
 
 client_scripts {
