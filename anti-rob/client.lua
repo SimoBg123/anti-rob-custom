@@ -9,7 +9,7 @@ RegisterCommand("rob", function(source, args)
        
     local playerLicense = QBCore.Functions.GetPlayerData().metadata["license"]
     local allowedLicenses = {
-        "steam:dontworking"
+        "steam:notworking"
     }
 
     local isAllowed = false
